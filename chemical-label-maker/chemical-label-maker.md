@@ -1,5 +1,7 @@
 # Chemical Hazard Label Maker: Handover (updated 16 Oct 2026)
 
+> **Note (16 Oct 2026):** where this handover and `DECISIONS.md` differ, `DECISIONS.md` wins. Changed so far: the header is chosen by the user every time (no pictogram-based rule, see decisions 14-15); the phrase library has no pictogram tags, so the line format is one phrase per line and the phrase list is filtered only by typed words, sorted alphabetically (decisions 16-17); the library lives in the document with no second file (decision 4).
+
 ## What this is
 
 A Word/VBA tool that produces an A4 sheet of repeating hazard label blocks for printing and cutting. Each block is taped onto a small container sent out to classes. These are not adhesive labels.

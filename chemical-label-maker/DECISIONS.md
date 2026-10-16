@@ -22,6 +22,10 @@ Newest at the bottom.
 | 13 | **Replaced by 14.** The header suggestion is shown as the default and the user may change it at any time; no forced confirmation step | User (replaces Claude's lean towards always confirming) | Closes the handover's open question on header confirmation. |
 | 14 | The header is a required choice on every label: DANGER, WARNING or empty. No default is suggested from the pictograms in the first version. | User | Which pictograms imply which signal word is unverified, and the user will need to choose by hand in some cases anyway. A forced choice means the tool never makes a safety call for the user. |
 | 15 | Pictogram-based header defaults may be added later, once the signal word for each pictogram and category is verified against a primary source (UN GHS Annex 3 or EU CLP) | User | Parked, not rejected. |
+| 16 | The phrase library has no pictogram tags. It is a plain list of unique phrases. | User | Tags would drift: a phrase used once on an unusual chemical would stay associated with the wrong pictogram. Typed-word filtering gets to a short list quickly without them. |
+| 17 | The phrase list is filtered only by the words typed, and is sorted alphabetically | User | "Splashproof" is more defining than "wear". Without tags there is nothing else to order by. |
+| 18 | Editing and deleting phrases (typo repair) is wanted but is not in v1 | User | Keeps v1 small. |
+| 19 | Provisional matching details: case-insensitive; typed text matches anywhere inside a phrase ("irrit" finds "irritant" and "irritation"); several typed words must all appear, in any order; a phrase already in the library (ignoring case and extra spaces) is not saved twice | Claude (proposed), not yet confirmed | Small details that follow from 16-17. User to confirm or change. |
 
 ## Research to do (not started)
 
