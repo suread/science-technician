@@ -16,18 +16,21 @@ Newest at the bottom.
 | 7 | Source is plain-text VBA modules in the repo, imported into the `.docm`; user does not edit code | User (direction) | User does not want to work in the VBA editor. |
 | 8 | Hazcards are used only to cross-check the worked examples; no hazcard data enters the repo | User (principle), Claude (rule) | Matches decision 2. |
 | 9 | Work proceeds in small steps, with a check-in on each decision | User | User wants to direct the work, and to be able to show it. |
-| 10 | If a chosen pictogram always carries DANGER, the header suggestion is DANGER, whatever else is chosen | User | "That one will always win." Which pictograms qualify is still being confirmed (see rule table below). |
-| 11 | If none of the chosen pictograms is always-DANGER, the suggestion is blank, except where the examples show WARNING (see open question A) | User | Some pictograms can carry either word depending on the chemical, so the tool must not guess. |
-| 12 | No pictograms: header is blank (no WARNING or DANGER) | User | Usually means not classified as hazardous (e.g. 0.1 M HCl). The label still identifies the chemical; CLEAPSS eye protection wording is a bullet, not a header. |
-| 13 | The header suggestion is shown as the default and the user may change it at any time; no forced confirmation step | User (replaces Claude's lean towards always confirming) | Closes the handover's open question on header confirmation. |
+| 10 | **Parked pending research (see 14).** If a chosen pictogram always carries DANGER, the header suggestion is DANGER, whatever else is chosen | User | "That one will always win." Which pictograms qualify is still being confirmed (see rule table below). |
+| 11 | **Parked pending research (see 14).** If none of the chosen pictograms is always-DANGER, the suggestion is blank, except where the examples show WARNING (see open question A) | User | Some pictograms can carry either word depending on the chemical, so the tool must not guess. |
+| 12 | No pictograms: header is typically empty (the user still chooses; see 14) (no WARNING or DANGER) | User | Usually means not classified as hazardous (e.g. 0.1 M HCl). The label still identifies the chemical; CLEAPSS eye protection wording is a bullet, not a header. |
+| 13 | **Replaced by 14.** The header suggestion is shown as the default and the user may change it at any time; no forced confirmation step | User (replaces Claude's lean towards always confirming) | Closes the handover's open question on header confirmation. |
 
-## Header rule: working table (draft, needs confirming)
+| 14 | The header is a required choice on every label: DANGER, WARNING or empty. No default is suggested from the pictograms in the first version. | User | Which pictograms imply which signal word is unverified, and the user will need to choose by hand in some cases anyway. A forced choice means the tool never makes a safety call for the user. |
+| 15 | Pictogram-based header defaults may be added later, once the signal word for each pictogram and category is verified against a primary source (UN GHS Annex 3 or EU CLP) | User | Parked, not rejected. |
 
-| Pictograms chosen | Suggested header | Status |
-|---|---|---|
-| None | blank | Decided (12) |
-| Corrosion (GHS05), with or without anything else | DANGER | Decided (10), matches handover |
-| Exclamation mark (GHS07) only | WARNING | In handover and worked examples; unclear against decision 11 (question A) |
-| Exclamation mark + a pictogram that can carry either word | ? | Question A |
-| Skull (GHS06) or Health hazard (GHS08) only | blank | Handover: either word possible |
-| Explosive, Flammable, Oxidising, Gas cylinder, Environment | ? | Not covered by the handover (question B) |
+## Research to do (not started)
+
+Verify against a primary source, then record the result here:
+
+- Signal word(s) allowed for each of GHS01-GHS09, by hazard class and category.
+- Whether Corrosion (GHS05) can carry WARNING (for example corrosive to metals, H290). This affects the old "corrosion always wins" idea (10).
+- Whether Skull (GHS06) can carry WARNING. The handover says it can; the research may disagree.
+- Whether Environment (GHS09) carries no signal word in some categories.
+
+The sandbox could not reach the reference sites (network policy), so this is best done in a laptop session using the Chrome extension, or after allowing the hosts.
