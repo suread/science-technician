@@ -18,9 +18,8 @@ Newest at the bottom.
 | 9 | Work proceeds in small steps, with a check-in on each decision | User | User wants to direct the work, and to be able to show it. |
 | 10 | **Parked pending research (see 14).** If a chosen pictogram always carries DANGER, the header suggestion is DANGER, whatever else is chosen | User | "That one will always win." Which pictograms qualify is still being confirmed (see rule table below). |
 | 11 | **Parked pending research (see 14).** If none of the chosen pictograms is always-DANGER, the suggestion is blank, except where the examples show WARNING (see open question A) | User | Some pictograms can carry either word depending on the chemical, so the tool must not guess. |
-| 12 | No pictograms: header is typically empty (the user still chooses; see 14) (no WARNING or DANGER) | User | Usually means not classified as hazardous (e.g. 0.1 M HCl). The label still identifies the chemical; CLEAPSS eye protection wording is a bullet, not a header. |
+| 12 | No pictograms: header is typically empty, though the user still chooses (see 14) | User | Usually means not classified as hazardous (e.g. 0.1 M HCl). The label still identifies the chemical; CLEAPSS eye protection wording is a bullet, not a header. |
 | 13 | **Replaced by 14.** The header suggestion is shown as the default and the user may change it at any time; no forced confirmation step | User (replaces Claude's lean towards always confirming) | Closes the handover's open question on header confirmation. |
-
 | 14 | The header is a required choice on every label: DANGER, WARNING or empty. No default is suggested from the pictograms in the first version. | User | Which pictograms imply which signal word is unverified, and the user will need to choose by hand in some cases anyway. A forced choice means the tool never makes a safety call for the user. |
 | 15 | Pictogram-based header defaults may be added later, once the signal word for each pictogram and category is verified against a primary source (UN GHS Annex 3 or EU CLP) | User | Parked, not rejected. |
 
