@@ -1,0 +1,33 @@
+# Test cases for the phrase library (decisions 16-19).
+# One case per line; fields are separated by " | ". Lines starting with # are comments.
+#
+# FILTER | name | library | typed | expected list shown
+#   library and expected are lists separated by ";". An empty field means an empty list.
+#   Expected order is the order the tool must show them (alphabetical, ignoring case).
+#
+# ADD | name | library | phrase being saved | library afterwards
+#   The library afterwards is in the order stored (new phrases go on the end).
+
+FILTER | nothing typed shows everything, alphabetical | Wear gloves; Wear splashproof goggles; Wear safety glasses | | Wear gloves; Wear safety glasses; Wear splashproof goggles
+FILTER | typing narrows the list | Wear gloves; Wear splashproof goggles; Wear safety glasses | wear | Wear gloves; Wear safety glasses; Wear splashproof goggles
+FILTER | a more specific word gives one phrase | Wear gloves; Wear splashproof goggles; Wear safety glasses | splashproof | Wear splashproof goggles
+FILTER | upper and lower case are ignored | Wear gloves; Wear splashproof goggles | SPLASHPROOF | Wear splashproof goggles
+FILTER | part of a word matches (irrit) | Causes skin irritation; Irritant to eyes; Wear gloves | irrit | Causes skin irritation; Irritant to eyes
+FILTER | match can be anywhere inside the phrase | Causes skin irritation; Wear gloves | skin | Causes skin irritation
+FILTER | several words, any order | Wear gloves; Wear splashproof goggles | goggles splash | Wear splashproof goggles
+FILTER | several words, all must appear | Wear gloves; Wear splashproof goggles | wear goggles | Wear splashproof goggles
+FILTER | several words, one missing gives nothing | Wear gloves; Wear splashproof goggles | wear boots | 
+FILTER | extra spaces in what is typed are ignored | Wear gloves; Wear splashproof goggles | "  wear   gloves " | Wear gloves
+FILTER | no match gives an empty list | Wear gloves | acid | 
+FILTER | empty library gives an empty list | | wear | 
+FILTER | brackets and symbols are typed literally | Do not mix with bleach (chlorine); Wear gloves | (chlorine) | Do not mix with bleach (chlorine)
+FILTER | wildcard characters are typed literally | Wear gloves; Causes burns | w*r | 
+FILTER | alphabetical order ignores case | apple; Banana; cherry | | apple; Banana; cherry
+
+ADD | new phrase goes on the end | Wear gloves | Wear splashproof goggles | Wear gloves; Wear splashproof goggles
+ADD | adding to an empty library | | Wear gloves | Wear gloves
+ADD | same phrase different case is not saved twice | Wear gloves | WEAR GLOVES | Wear gloves
+ADD | extra spaces around a phrase are removed | Wear gloves | "  Wear safety glasses  " | Wear gloves; Wear safety glasses
+ADD | extra spaces inside a phrase count as the same phrase | Wear gloves | Wear   gloves | Wear gloves
+ADD | a blank phrase is not saved | Wear gloves | | Wear gloves
+ADD | a phrase of only spaces is not saved | Wear gloves | "   " | Wear gloves

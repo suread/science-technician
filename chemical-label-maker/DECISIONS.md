@@ -25,7 +25,8 @@ Newest at the bottom.
 | 16 | The phrase library has no pictogram tags. It is a plain list of unique phrases. | User | Tags would drift: a phrase used once on an unusual chemical would stay associated with the wrong pictogram. Typed-word filtering gets to a short list quickly without them. |
 | 17 | The phrase list is filtered only by the words typed, and is sorted alphabetically | User | "Splashproof" is more defining than "wear". Without tags there is nothing else to order by. |
 | 18 | Editing and deleting phrases (typo repair) is wanted but is not in v1 | User | Keeps v1 small. |
-| 19 | Provisional matching details: case-insensitive; typed text matches anywhere inside a phrase ("irrit" finds "irritant" and "irritation"); several typed words must all appear, in any order; a phrase already in the library (ignoring case and extra spaces) is not saved twice | Claude (proposed), not yet confirmed | Small details that follow from 16-17. User to confirm or change. |
+| 19 | Provisional matching details: case-insensitive; typed text matches anywhere inside a phrase ("irrit" finds "irritant" and "irritation"); several typed words must all appear, in any order; a phrase already in the library (ignoring case and extra spaces) is not saved twice | Claude (proposed), User confirmed | Small details that follow from 16-17. |
+| 20 | Multi-word matching (all words, any order) is included in v1 | User | Started as a nice-to-have; the code is only a few lines, so it goes in. |
 
 ## Research to do (not started)
 
