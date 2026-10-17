@@ -60,7 +60,7 @@ The exact rules are in `tests/phrase-library-cases.txt`, checked by `tests/check
 
 ### Where it is stored
 
-Inside the Word document, so there is never a second file: a hidden section at the end of the document, to start with. All reads and writes go through two procedures, `LoadPhrases` and `SavePhrases`, so the storage can later move to a hidden custom XML part without touching anything else. The long-term aim is that the tool runs without the original author being on hand to fix it, so the library needs a clear marker, validation on write, and a timestamped backup before each save.
+Inside the Word document, so there is never a second file: a clearly marked section at the end of the document. While the user is the only person using the tool it stays visible, not hidden, so it can be copied by hand into a new version of the file (decision 37); hiding it comes later. All reads and writes go through two procedures, `LoadPhrases` and `SavePhrases`, so the storage can later move to a hidden custom XML part without touching anything else. The long-term aim is that the tool runs without the original author being on hand to fix it, so the library needs a clear marker, validation on write, and a timestamped backup before each save.
 
 The document must be saved as a macro-enabled file (`.docm`). Macros are known to work on the school laptop from earlier VBA use in Excel.
 

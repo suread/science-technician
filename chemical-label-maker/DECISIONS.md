@@ -43,12 +43,13 @@ Newest at the bottom.
 | 34 | Label width is fixed by the chosen preset. Long text wraps, and the font size may be reduced to help. If a single label is taller than the sheet, the tool warns and does not build. | User | Container sizes are fixed. Rules for reducing the font (automatic or chosen, and the smallest allowed size) are not decided; see open items. |
 | 35 | The concentration line and the name line are the same size and both bold | User | Matches the user's preference; to be checked against existing labels. |
 | 36 | `form-spec.md` has been read by the user and is accepted as the basis for the build, with the open questions listed in it still to settle | User | Handover to the next session. |
+| 37 | While the user is the only person using the tool, the phrase library section stays visible in the document (clearly marked, not hidden), and updates to the tool are handled by informal versioning (several file names) and copying the phrase text into the new `.docm` by hand. Hiding the section, or moving it to a custom XML part, waits until other technicians use the tool. | User | Hiding the phrases makes manual copying harder, and the user is the only user for now. This also removes the urgency of the "update without wiping the library" open item. Refines decisions 4 and 5. |
 
 ## Open items for the next session
 
 - **Font reduction.** When and how far may text shrink to fit a label (decision 34)? Not decided.
 - **Label size presets.** Width and columns, read from the user's existing Word label files and confirmed by a test print (decision 6).
-- **Updating a deployed document without losing the phrase library.** The library lives inside the `.docm` that technicians use (decision 4), so rebuilding that file from the source modules would wipe it. The import step must replace the code in an existing document and leave the library section alone, or the library must be exported and re-imported around an update. Needs a design before the first release.
+- **Updating a deployed document without losing the phrase library.** Not urgent while the user is the only user (decision 37); needed before others use it. The library lives inside the `.docm` that technicians use (decision 4), so rebuilding that file from the source modules would wipe it. The import step must replace the code in an existing document and leave the library section alone, or the library must be exported and re-imported around an update. Needs a design before the first release.
 - **Signal word research** (below).
 - **Unknown concentration** for A-level (see `form-spec.md`).
 
