@@ -22,7 +22,7 @@ Items marked **Proposed** are Claude's suggestions and have not been agreed. Eve
 6. **Hazard bullets.** A list of bullet lines. For each bullet the user types in a search box, picks from the matching phrases, or picks "Add new phrase..." (decisions 17, 19-25).
    - The user can add more bullets and remove one.
    - **Proposed:** bullets print in the order added.
-   - The maximum number of bullets depends on label size; see Open questions.
+   - There is no maximum. The label grows taller to fit them (decision 33).
 
 7. **Buttons.** Preview, and Cancel.
 
@@ -37,5 +37,6 @@ Items marked **Proposed** are Claude's suggestions and have not been agreed. Eve
 ## Open questions (to settle before building the form)
 
 - **Unknown concentration.** Some exercises have the student work out the concentration, so lower school labels read "acid X", "acid Y" with no concentration. With the current form this already works: leave value and unit both empty, same as a solid. Open: whether a label for A-level needs anything different. The user is checking with a colleague.
-- **Label sizes.** Not decided. To be read from existing Word label files, then confirmed with a test print (decision 6). This also fixes the maximum number of bullets.
-- **How name and concentration sit together** on the label, e.g. `SODIUM HYDROXIDE 0.4 M` on one line or on two. To be tried in the layout prototype.
+- **Label sizes.** Not decided. Width (and number of columns) comes from a named preset, read from existing Word label files and confirmed with a test print (decision 6). Height is not a preset: it follows the content (decision 33), and the number of rows on the A4 sheet is worked out from it. To confirm: does width stay fixed per preset while only height changes?
+- **What happens if one label is too tall** for the sheet. Proposed: the tool warns and does not build.
+- **Concentration styling.** The concentration is the top line and the name is the line below, both centred (decision 32). The name is bold capitals (decision 26). Not yet said: should the concentration be the same size, and bold?

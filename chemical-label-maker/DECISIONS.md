@@ -38,6 +38,8 @@ Newest at the bottom.
 | 29 | Both the home and work laptops are Windows 11. Only the home laptop will be used for Claude Code sessions driving Word. | User | The work laptop is used for running the finished tool, not for development. |
 | 30 | The unit list is M, vol, % w/v and % v/v, and nothing else for v1. Concentrations by mass are expressed as % w/v, not g/L. | User | The school has a standard way of expressing concentration in %, and the conversion is minimal. (1 % w/v = 10 g/L, so the two must not be mixed up.) % v/v added in case liquid enzymes are bought in place of powders. |
 | 31 | The header dropdown starts on "Choose..." (a prompt, not a header value). The button that moves on from the form stays inactive until a header has been chosen. | User (agreed Claude's proposal) | Makes the choice forced, and separates "chose none" from "hasn't looked yet". |
+| 32 | On the label, the concentration is the top line and the chemical name the line below it, both centred (as on current labels). With no concentration (solids, "acid X"), only the name line appears. | User | Keeps the familiar look. |
+| 33 | Bullets are never dropped or limited to fit. Label height grows with the content instead. | User | "If they are needed, they are needed." Consequence: the number of label rows per A4 sheet is worked out from the label height, not fixed. |
 
 ## Research to do (not started)
 
