@@ -9,7 +9,7 @@ Items marked **Proposed** are Claude's suggestions and have not been agreed. Eve
 
 2. **Concentration.** A value box and a unit dropdown, side by side. Both empty for a solid (decision 27).
    - The value box takes text, not only numbers, because bands such as `0.2-1` are needed.
-   - The unit dropdown holds a fixed list. **Proposed:** M, vol, % w/v. (Handover says "units include", so the list may need more; see Open questions.)
+   - The unit dropdown holds a fixed list: M, vol, % w/v (decision 30).
    - **Proposed:** a value with no unit, or a unit with no value, is flagged before the label can be built.
 
 3. **Dot colour.** Three radio buttons: red (acid), blue (alkali), none. Default none. Display only; it does not filter anything.
@@ -36,6 +36,5 @@ Items marked **Proposed** are Claude's suggestions and have not been agreed. Eve
 
 ## Open questions (to settle before building the form)
 
-- **Unit list.** Is M, vol, % w/v complete? Others used in school: % v/v, g/L (not equal to % w/v - 1 % w/v is 10 g/L).
 - **Label sizes.** Not decided. To be read from existing Word label files, then confirmed with a test print (decision 6). This also fixes the maximum number of bullets.
 - **How name and concentration sit together** on the label, e.g. `SODIUM HYDROXIDE 0.4 M` on one line or on two. To be tried in the layout prototype.
