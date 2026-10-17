@@ -40,6 +40,17 @@ Newest at the bottom.
 | 31 | The header dropdown starts on "Choose..." (a prompt, not a header value). The button that moves on from the form stays inactive until a header has been chosen. | User (agreed Claude's proposal) | Makes the choice forced, and separates "chose none" from "hasn't looked yet". |
 | 32 | On the label, the concentration is the top line and the chemical name the line below it, both centred (as on current labels). With no concentration (solids, "acid X"), only the name line appears. | User | Keeps the familiar look. |
 | 33 | Bullets are never dropped or limited to fit. Label height grows with the content instead. | User | "If they are needed, they are needed." Consequence: the number of label rows per A4 sheet is worked out from the label height, not fixed. |
+| 34 | Label width is fixed by the chosen preset. Long text wraps, and the font size may be reduced to help. If a single label is taller than the sheet, the tool warns and does not build. | User | Container sizes are fixed. Rules for reducing the font (automatic or chosen, and the smallest allowed size) are not decided; see open items. |
+| 35 | The concentration line and the name line are the same size and both bold | User | Matches the user's preference; to be checked against existing labels. |
+| 36 | `form-spec.md` has been read by the user and is accepted as the basis for the build, with the open questions listed in it still to settle | User | Handover to the next session. |
+
+## Open items for the next session
+
+- **Font reduction.** When and how far may text shrink to fit a label (decision 34)? Not decided.
+- **Label size presets.** Width and columns, read from the user's existing Word label files and confirmed by a test print (decision 6).
+- **Updating a deployed document without losing the phrase library.** The library lives inside the `.docm` that technicians use (decision 4), so rebuilding that file from the source modules would wipe it. The import step must replace the code in an existing document and leave the library section alone, or the library must be exported and re-imported around an update. Needs a design before the first release.
+- **Signal word research** (below).
+- **Unknown concentration** for A-level (see `form-spec.md`).
 
 ## Research to do (not started)
 
