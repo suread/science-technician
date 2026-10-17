@@ -27,6 +27,9 @@ Newest at the bottom.
 | 18 | Editing and deleting phrases (typo repair) is wanted but is not in v1 | User | Keeps v1 small. |
 | 19 | Provisional matching details: case-insensitive; typed text matches anywhere inside a phrase ("irrit" finds "irritant" and "irritation"); several typed words must all appear, in any order; a phrase already in the library (ignoring case and extra spaces) is not saved twice | Claude (proposed), User confirmed | Small details that follow from 16-17. |
 | 20 | Multi-word matching (all words, any order) is included in v1 | User | Started as a nice-to-have; the code is only a few lines, so it goes in. |
+| 21 | If a phrase already exists (ignoring case and extra spaces), the original wording is kept. Corrections are made through the later edit/delete feature. | User | Keeps the library predictable; wording changes should be deliberate. |
+| 22 | `*` and `?` are ordinary characters when typing in the phrase search. No wildcard searching. | User | Unnecessary complication for non-IT users, and `*` may legitimately appear on a label. |
+| 23 | Adding a new phrase is a deliberate option in the phrase list ("Add new phrase..."), not "whatever is in the search box". The search text is not used as the new phrase. | User | Search wording (e.g. "goggles splash") is not the proper phrase; the user wants to type the full wording on purpose. |
 
 ## Research to do (not started)
 
