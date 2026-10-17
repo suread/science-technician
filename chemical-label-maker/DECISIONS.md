@@ -32,6 +32,10 @@ Newest at the bottom.
 | 23 | Adding a new phrase is a deliberate option in the phrase list ("Add new phrase..."), not "whatever is in the search box". The search text is not used as the new phrase. | User | Search wording (e.g. "goggles splash") is not the proper phrase; the user wants to type the full wording on purpose. |
 | 24 | "Add new phrase..." is always the first entry in the phrase list, unaffected by filtering, shown differently from real phrases (e.g. in brackets). A phrase with that exact text cannot be saved. | User (agreed Claude's proposal) | It must be visible exactly when a search finds nothing, and must not be mistaken for a phrase. |
 | 25 | A new phrase is added to the current label immediately but saved to the library only when the label is built. | User (agreed Claude's proposal; either option was acceptable) | Matches the handover ("saved the first time it is used") and abandoned labels do not leave typos in the library. Cost: a new phrase is lost if Word closes before the sheet is built. Revisit if that bites. |
+| 26 | The chemical name is printed in capitals and bold (e.g. **SODIUM HYDROXIDE**) | User | Contrasts with the hazard/precaution text; bold separates it from the header, which is also usually capitals. |
+| 27 | Concentration units come from a fixed dropdown; users cannot type their own. Solids have no concentration and no unit. | User | Safer than free text. Exact list to be confirmed (see form-spec.md). |
+| 28 | All nine GHS pictograms are offered | User | The CLEAPSS pictogram macro the school uses also offers all nine. |
+| 29 | Both the home and work laptops are Windows 11. Only the home laptop will be used for Claude Code sessions driving Word. | User | The work laptop is used for running the finished tool, not for development. |
 
 ## Research to do (not started)
 
