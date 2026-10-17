@@ -36,7 +36,8 @@ Newest at the bottom.
 | 27 | Concentration units come from a fixed dropdown; users cannot type their own. Solids have no concentration and no unit. | User | Safer than free text. Exact list to be confirmed (see form-spec.md). |
 | 28 | All nine GHS pictograms are offered | User | The CLEAPSS pictogram macro the school uses also offers all nine. |
 | 29 | Both the home and work laptops are Windows 11. Only the home laptop will be used for Claude Code sessions driving Word. | User | The work laptop is used for running the finished tool, not for development. |
-| 30 | The unit list is M, vol and % w/v, and nothing else for v1. Concentrations by mass are expressed as % w/v, not g/L. | User | The school has a standard way of expressing concentration in %, and the conversion is minimal. (1 % w/v = 10 g/L, so the two must not be mixed up.) |
+| 30 | The unit list is M, vol, % w/v and % v/v, and nothing else for v1. Concentrations by mass are expressed as % w/v, not g/L. | User | The school has a standard way of expressing concentration in %, and the conversion is minimal. (1 % w/v = 10 g/L, so the two must not be mixed up.) % v/v added in case liquid enzymes are bought in place of powders. |
+| 31 | The header dropdown starts on "Choose..." (a prompt, not a header value). The button that moves on from the form stays inactive until a header has been chosen. | User (agreed Claude's proposal) | Makes the choice forced, and separates "chose none" from "hasn't looked yet". |
 
 ## Research to do (not started)
 
