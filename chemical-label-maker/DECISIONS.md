@@ -30,6 +30,8 @@ Newest at the bottom.
 | 21 | If a phrase already exists (ignoring case and extra spaces), the original wording is kept. Corrections are made through the later edit/delete feature. | User | Keeps the library predictable; wording changes should be deliberate. |
 | 22 | `*` and `?` are ordinary characters when typing in the phrase search. No wildcard searching. | User | Unnecessary complication for non-IT users, and `*` may legitimately appear on a label. |
 | 23 | Adding a new phrase is a deliberate option in the phrase list ("Add new phrase..."), not "whatever is in the search box". The search text is not used as the new phrase. | User | Search wording (e.g. "goggles splash") is not the proper phrase; the user wants to type the full wording on purpose. |
+| 24 | "Add new phrase..." is always the first entry in the phrase list, unaffected by filtering, shown differently from real phrases (e.g. in brackets). A phrase with that exact text cannot be saved. | User (agreed Claude's proposal) | It must be visible exactly when a search finds nothing, and must not be mistaken for a phrase. |
+| 25 | A new phrase is added to the current label immediately but saved to the library only when the label is built. | User (agreed Claude's proposal; either option was acceptable) | Matches the handover ("saved the first time it is used") and abandoned labels do not leave typos in the library. Cost: a new phrase is lost if Word closes before the sheet is built. Revisit if that bites. |
 
 ## Research to do (not started)
 
